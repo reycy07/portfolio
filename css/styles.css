@@ -35,6 +35,13 @@
     grid-template-columns: repeat(2,50%);
 }
 
+.portfolio__subtitle{
+    font-size: 100px;
+    font-weight: bold;
+    color: var(--orange-color);
+    margin: 0;
+}
+
 /* header */
 
 .portfolio__header{
@@ -96,9 +103,29 @@
 }
 
 /* About me */
-
+.portfolio__user-img-box{
+    max-width: 100%;
+}
+.portfolio__user-img-box img{
+    max-width: 100%;
+}
+.portfolio__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portfolio__info-box{
+    border-left: 2px solid var(--white-color);
+    padding: 25px 0 25px 20px;
+}
+.portfolio__text{
+    line-height: 25.9px;
+}
 /* modifier */
 
 .portfolio--mt-300{
     margin-top: 300px;
+}
+.portfolio--ml-122{
+    margin-left: 122px;
 }
