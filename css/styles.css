@@ -148,13 +148,13 @@
     position: relative;
     width: 175px;
     height: 175px;
-    transform: rotate(270deg);
-
+    
 }
 .portfolio__percent svg{
     position: relative;
     width: 175px;
     height: 175px;
+    transform: rotate(270deg);
 }
 .portfolio__percent svg circle{
     width: 100%;
@@ -186,11 +186,11 @@
 {
     0%
     {
-        transform: rotate(210deg);
+        transform: rotate(120deg);
     }
     100%
     {
-        transform: rotate(400deg);
+        transform: rotate(310deg);
     }
 }
 .portfolio__dot::before{
@@ -216,11 +216,11 @@
     }
     1%
     {
-        transform: rotate(210deg);
+        transform: rotate(120deg);
     }
     100%
     {
-        transform: rotate(400deg);
+        transform: rotate(310deg);
     }
 }
 /* modifier */
