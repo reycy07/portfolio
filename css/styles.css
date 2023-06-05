@@ -399,4 +399,5 @@
 .portfolio__details a{
     color: var(--orange-color);
     text-decoration: none;
+    cursor: pointer;
 }
