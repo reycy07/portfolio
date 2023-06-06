@@ -134,6 +134,7 @@ html{
     justify-content: center;
     align-items: center;
     background-color: rgba(13, 13, 13, 0.74);
+    overflow: hidden;
 }
 .portfolio__title{
     margin: 0;
@@ -164,6 +165,7 @@ html{
 .portfolio__info-box{
     border-left: 2px solid var(--white-color);
     padding: 25px 0 25px 20px;
+    overflow: hidden;
 }
 .portfolio__text{
     line-height: 25.9px;
@@ -331,6 +333,7 @@ html{
     max-width: 100%;
     border-left: 1px solid var(--white-color);
     padding: 10px 0 10px 20px;
+    overflow: hidden;
 }
 
 .portfolio__gallery{
