@@ -373,7 +373,7 @@
     transition: all 0.3s ease;
 }
 
-.portfolio__info{
+.portfolio__info-tex{
     font-size: 18px;
     font-weight: lighter;
     position: relative;
@@ -389,7 +389,7 @@
     transition: all 0.3s 0.2s ease;
 }
 
-.portfolio__image-box:hover .portfolio__info{
+.portfolio__image-box:hover .portfolio__info-tex{
     bottom: 0;
     opacity: 1;
     visibility: visible;
@@ -401,3 +401,25 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Contact Us */
+.portfolio__contact-box{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+.portfolio__contact-box a{
+    font-size: 29px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 15px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+/* .portfolio__contact-box a{
+    display: block;
+    color: var(--white-color);
+    text-decoration: none;
+} */
+
