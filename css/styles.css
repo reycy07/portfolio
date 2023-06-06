@@ -60,18 +60,61 @@ html{
     align-items: center;
     width: 100%;
 }
+.portfolio__nav *{
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
 .portfolio__list{
     display: flex;
     list-style: none;
 }
 .portfolio__link{
     margin-left: 45px;
+    list-style: outside none none;
 }
 .portfolio__link a{
+    font-size: 20px;
+    padding: .5em .8em;
     color: var(--white-color);
     font-weight: bold;
     text-decoration: none;
+    position: relative;
 }
+
+.portfolio__link a::before,
+.portfolio__link a::after{
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.portfolio__link a::before{
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid var(--white-color);
+    border-right: 3px solid var(--white-color);
+    transform: translate(-100%, 50%);
+}
+
+.portfolio__link a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid var(--white-color);
+    border-left: 3px solid var(--white-color);
+    transform: translate(100%, -50%);
+  }
+
+.portfolio__link a:hover:before,
+.portfolio__link a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
 
 /* banner */
 
