@@ -16,6 +16,9 @@
     --font-size-text: 18px;
     --num: 50;
 }
+html{
+    scroll-behavior: smooth;
+}
 .portfolio{
     background-color: var(--bg-color);
     box-sizing: border-box;
