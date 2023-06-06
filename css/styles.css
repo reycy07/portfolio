@@ -402,11 +402,48 @@
     text-decoration: none;
     color: var(--white-color);
 }
-/* .portfolio__contact-box a{
-    display: block;
+.portfolio__contact-grid{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(2,50%);
+    row-gap: 40px;
+    column-gap: 20px;
+}
+.portfolio__form input{
+    padding: 10px 20px;
+}
+.portfolio__form input,
+.portfolio__form textarea{
+    font-size: 29px;
     color: var(--white-color);
-    text-decoration: none;
-} */
+    border: none;
+    border-bottom: 1.5px solid var(--white-color);
+    background-color: #000;
+}
+
+.portfolio__form input:focus{
+    outline: none;
+}
+
+.portfolio__form textarea{
+    margin-top: 45px;
+    width: 100%;
+    height: 230px;
+    resize: none;
+    padding: 10px 20px;
+}
+.portfolio__form textarea:focus{
+    outline: none;
+}
+
+.portfolio__form input[type=submit]{
+    margin-top: 10px;
+}
+
+.portfolio__form input[type=submit]:hover{
+    background-color: var(--orange-color);
+}
+
 
 /* modifier */
 
@@ -419,9 +456,10 @@
 .portfolio--mr-122{
     margin-right: 122px;
 }
+.portfolio--mb-30{
+    margin-bottom: 30px;
+}
 .portfolio--py-30{
     padding: 30px 0;
 }
-
-
 
