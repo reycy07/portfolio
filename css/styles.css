@@ -190,31 +190,7 @@ html{
     justify-content: center;
     position: relative;
 }
-.portfolio__number-skill{
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.portfolio__number-skill h3{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--orange-color);
-    font-weight: bold;
-    font-size: 2.5em;
-}
-.portfolio__number-skill span{
-    font-size: 0.8em;
-}
-.portfolio__number-skill p{
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+
 .portfolio__logo{
     position: absolute;
     bottom: 10px;
