@@ -192,9 +192,8 @@ html{
 }
 
 .portfolio__logo{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+    width: 80px;
+    fill: #fff;
 }
 .portfolio__card:hover .portfolio__logo{
     color: var(--orange-color);
