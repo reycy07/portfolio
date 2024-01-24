@@ -152,7 +152,7 @@ html{
 
 /* About me */
 .portfolio__user-img-box{
-    max-width: 40%;
+    max-width: 75%;
     margin: 0 auto;
 }
 .portfolio__user-img-box img{
