@@ -152,7 +152,8 @@ html{
 
 /* About me */
 .portfolio__user-img-box{
-    max-width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
 }
 .portfolio__user-img-box img{
     max-width: 100%;
