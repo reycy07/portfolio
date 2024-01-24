@@ -73,7 +73,7 @@ html{
     list-style: outside none none;
 }
 .portfolio__link a{
-    font-size: 20px;
+    font-size: 25px;
     padding: .5em .8em;
     color: var(--white-color);
     font-weight: bold;
