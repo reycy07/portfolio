@@ -1,8 +1,15 @@
 /* Fonts */
 @font-face {
     font-family: 'Coves';
-    src: url(../fonts/Coves);
-}
+       src: url('../fonts/Coves-Bold.otf');
+    font-weight: bold;
+ }
+
+ @font-face {
+    font-family: 'Coves';
+       src: url('../fonts/Coves-Light.otf');
+    font-weight: 400;
+ }
 
 /* General */
 :root{
