@@ -14,9 +14,9 @@
 /* General */
 :root{
     /* colors */
-    --orange-color: #D94711;
+    --orange-color: #d45222;
     --bg-color: #1b1b1b;
-    --white-color: #fff;
+    --white-color: #e7e4e4;
 
     /* Font */
     --font-family: 'Coves';
@@ -176,9 +176,14 @@ html{
     overflow: hidden;
 }
 .portfolio__text{
-    line-height: 25.9px;
+    line-height: 26px;
+    letter-spacing: 1.1px;
 }
 
+.portfolio__text span{
+    font-weight: bold;
+    color: var(--orange-color);
+}
 /* skills */
 
 .portfolio__skills-grid{
