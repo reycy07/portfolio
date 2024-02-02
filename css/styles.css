@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
-    font-family: 'Coves';
+    font-family: 'Coves-Bold';
        src: url('../fonts/Coves-Bold.otf');
     font-weight: bold;
  }
 
  @font-face {
-    font-family: 'Coves';
+    font-family: 'Coves-light';
        src: url('../fonts/Coves-Light.otf');
     font-weight: 400;
  }
@@ -14,12 +14,13 @@
 /* General */
 :root{
     /* colors */
-    --orange-color: #d45222;
+    --orange-color: #e66333;
     --bg-color: #1b1b1b;
     --white-color: #e7e4e4;
 
     /* Font */
-    --font-family: 'Coves';
+    --font-family-bold: 'Coves-Bold';
+    --font-family-light: 'Coves-light';
     --font-size-text: 18px;
     --num: 50;
 }
@@ -29,7 +30,7 @@ html{
 .portfolio{
     background-color: var(--bg-color);
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: var(--font-family-light);
     font-size: var(--font-size-text);
     position: relative;
     color: var(--white-color);
@@ -47,6 +48,7 @@ html{
 }
 
 .portfolio__subtitle{
+    font-family: var(--font-family-bold);
     font-size: 100px;
     font-weight: bold;
     color: var(--orange-color);
@@ -81,6 +83,7 @@ html{
 }
 .portfolio__link a{
     font-size: 25px;
+    font-family: var(--font-family-bold);
     padding: .5em .8em;
     color: var(--white-color);
     font-weight: bold;
@@ -146,6 +149,7 @@ html{
 .portfolio__title{
     margin: 0;
     color: var(--white-color);
+    font-family: var(--font-family-bold);
     font-size: 85px;
     font-weight: bold;
     text-align: right;
@@ -181,7 +185,7 @@ html{
 }
 
 .portfolio__text span{
-    font-weight: bold;
+    font-family: var(--font-family-bold);
     color: var(--orange-color);
 }
 /* skills */
