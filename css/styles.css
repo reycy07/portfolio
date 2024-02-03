@@ -14,7 +14,8 @@
 /* General */
 :root{
     /* colors */
-    --orange-color: #e66333;
+    --orange-primary-color: #D94711;
+    --orange-secundary-color: #e66333;
     --bg-color: #1b1b1b;
     --white-color: #e7e4e4;
 
@@ -51,7 +52,7 @@ html{
     font-family: var(--font-family-bold);
     font-size: 100px;
     font-weight: bold;
-    color: var(--orange-color);
+    color: var(--orange-primary-color);
     margin: 0;
 }
 
@@ -158,7 +159,7 @@ html{
 .portfolio__title small{
     font-size: 29px;
     line-height: 47px;
-    color: var(--orange-color);
+    color: var(--orange-primary-color);
 }
 
 /* About me */
@@ -186,7 +187,7 @@ html{
 
 .portfolio__text span{
     font-family: var(--font-family-bold);
-    color: var(--orange-color);
+    color: var(--orange-secundary-color);
 }
 /* skills */
 
@@ -210,7 +211,7 @@ html{
 
 .portfolio__logo{
     width: 80px;
-    fill: #fff;
+    fill: var(--white-color);
 }
 .portfolio__card:hover .portfolio__logo{
     color: var(--orange-color);
@@ -436,7 +437,7 @@ html{
   .portfolio__footer-title{
     font-size: 58px;
     font-weight: bold;
-    color: var(--orange-color);
+    color: var(--orange-primary-color);
     margin: 0px;
 }
 .portfolio__footer-email{
