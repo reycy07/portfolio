@@ -189,33 +189,7 @@ html{
     font-family: var(--font-family-bold);
     color: var(--orange-secundary-color);
 }
-/* skills */
 
-.portfolio__skills-grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 263px);
-    column-gap: 20px;
-    row-gap: 80px;
-}
-.portfolio__card{
-    max-width: 100%;
-    height: inherit;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.portfolio__logo{
-    width: 80px;
-    fill: var(--white-color);
-}
-.portfolio__card:hover .portfolio__logo{
-    color: var(--orange-color);
-}
 /* projects */
 
 .portfolio__banner{
@@ -340,63 +314,6 @@ html{
     cursor: pointer;
 }
 
-/* Contact Us */
-.portfolio__contact-box{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    margin-bottom: 20px;
-}
-.portfolio__contact-box a{
-    font-size: 29px;
-    font-weight: bold;
-    display: inline-block;
-    padding-left: 15px;
-    text-decoration: none;
-    color: var(--white-color);
-}
-.portfolio__contact-grid{
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: repeat(2,50%);
-    row-gap: 40px;
-    column-gap: 20px;
-}
-.portfolio__form input{
-    padding: 10px 20px;
-}
-.portfolio__form input,
-.portfolio__form textarea{
-    font-size: 29px;
-    color: var(--white-color);
-    border: none;
-    border-bottom: 1.5px solid var(--white-color);
-    background-color: #000;
-}
-
-.portfolio__form input:focus{
-    outline: none;
-}
-
-.portfolio__form textarea{
-    margin-top: 45px;
-    width: 100%;
-    height: 230px;
-    resize: none;
-    padding: 10px 20px;
-}
-.portfolio__form textarea:focus{
-    outline: none;
-}
-
-.portfolio__form input[type=submit]{
-    margin-top: 10px;
-}
-
-.portfolio__form input[type=submit]:hover{
-    background-color: var(--orange-color);
-}
-
 
 /* Footer */
 .portfolio__footer{
@@ -421,14 +338,6 @@ html{
     animation: rotate-infinite 9s infinite linear;
     
 }
-@keyframes rotate-infinite {
-    0% {
-      transform: rotate(0deg); 
-    }
-    100% {
-      transform: rotate(360deg); 
-    }
-  }
   .portfolio__social-media-box{
     position: absolute;
     text-align: center;
