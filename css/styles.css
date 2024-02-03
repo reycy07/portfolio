@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
-    font-family: 'Coves';
+    font-family: 'Coves-Bold';
        src: url('../fonts/Coves-Bold.otf');
     font-weight: bold;
  }
 
  @font-face {
-    font-family: 'Coves';
+    font-family: 'Coves-light';
        src: url('../fonts/Coves-Light.otf');
     font-weight: 400;
  }
@@ -14,12 +14,14 @@
 /* General */
 :root{
     /* colors */
-    --orange-color: #D94711;
+    --orange-primary-color: #D94711;
+    --orange-secundary-color: #e66333;
     --bg-color: #1b1b1b;
-    --white-color: #fff;
+    --white-color: #e7e4e4;
 
     /* Font */
-    --font-family: 'Coves';
+    --font-family-bold: 'Coves-Bold';
+    --font-family-light: 'Coves-light';
     --font-size-text: 18px;
     --num: 50;
 }
@@ -29,7 +31,7 @@ html{
 .portfolio{
     background-color: var(--bg-color);
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: var(--font-family-light);
     font-size: var(--font-size-text);
     position: relative;
     color: var(--white-color);
@@ -47,9 +49,10 @@ html{
 }
 
 .portfolio__subtitle{
+    font-family: var(--font-family-bold);
     font-size: 100px;
     font-weight: bold;
-    color: var(--orange-color);
+    color: var(--orange-primary-color);
     margin: 0;
 }
 
@@ -81,6 +84,7 @@ html{
 }
 .portfolio__link a{
     font-size: 25px;
+    font-family: var(--font-family-bold);
     padding: .5em .8em;
     color: var(--white-color);
     font-weight: bold;
@@ -146,6 +150,7 @@ html{
 .portfolio__title{
     margin: 0;
     color: var(--white-color);
+    font-family: var(--font-family-bold);
     font-size: 85px;
     font-weight: bold;
     text-align: right;
@@ -154,7 +159,7 @@ html{
 .portfolio__title small{
     font-size: 29px;
     line-height: 47px;
-    color: var(--orange-color);
+    color: var(--orange-primary-color);
 }
 
 /* About me */
@@ -176,36 +181,15 @@ html{
     overflow: hidden;
 }
 .portfolio__text{
-    line-height: 25.9px;
+    line-height: 26px;
+    letter-spacing: 1.1px;
 }
 
-/* skills */
-
-.portfolio__skills-grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 263px);
-    column-gap: 20px;
-    row-gap: 80px;
-}
-.portfolio__card{
-    max-width: 100%;
-    height: inherit;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.portfolio__text span{
+    font-family: var(--font-family-bold);
+    color: var(--orange-secundary-color);
 }
 
-.portfolio__logo{
-    width: 80px;
-    fill: #fff;
-}
-.portfolio__card:hover .portfolio__logo{
-    color: var(--orange-color);
-}
 /* projects */
 
 .portfolio__banner{
@@ -330,63 +314,6 @@ html{
     cursor: pointer;
 }
 
-/* Contact Us */
-.portfolio__contact-box{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    margin-bottom: 20px;
-}
-.portfolio__contact-box a{
-    font-size: 29px;
-    font-weight: bold;
-    display: inline-block;
-    padding-left: 15px;
-    text-decoration: none;
-    color: var(--white-color);
-}
-.portfolio__contact-grid{
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: repeat(2,50%);
-    row-gap: 40px;
-    column-gap: 20px;
-}
-.portfolio__form input{
-    padding: 10px 20px;
-}
-.portfolio__form input,
-.portfolio__form textarea{
-    font-size: 29px;
-    color: var(--white-color);
-    border: none;
-    border-bottom: 1.5px solid var(--white-color);
-    background-color: #000;
-}
-
-.portfolio__form input:focus{
-    outline: none;
-}
-
-.portfolio__form textarea{
-    margin-top: 45px;
-    width: 100%;
-    height: 230px;
-    resize: none;
-    padding: 10px 20px;
-}
-.portfolio__form textarea:focus{
-    outline: none;
-}
-
-.portfolio__form input[type=submit]{
-    margin-top: 10px;
-}
-
-.portfolio__form input[type=submit]:hover{
-    background-color: var(--orange-color);
-}
-
 
 /* Footer */
 .portfolio__footer{
@@ -411,14 +338,6 @@ html{
     animation: rotate-infinite 9s infinite linear;
     
 }
-@keyframes rotate-infinite {
-    0% {
-      transform: rotate(0deg); 
-    }
-    100% {
-      transform: rotate(360deg); 
-    }
-  }
   .portfolio__social-media-box{
     position: absolute;
     text-align: center;
@@ -427,7 +346,7 @@ html{
   .portfolio__footer-title{
     font-size: 58px;
     font-weight: bold;
-    color: var(--orange-color);
+    color: var(--orange-primary-color);
     margin: 0px;
 }
 .portfolio__footer-email{
